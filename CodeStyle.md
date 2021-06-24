@@ -23,7 +23,7 @@
 
 <style>
 .class {
-    color: $red;
+    color: var(--red);
     background-color: var(--green);
 }
 </style>
@@ -217,14 +217,14 @@ or
 // ----------- bad
 <style>
 .class .v-input__icon--append .v-icon {
-    color: $red !important;
+    color: var(--red) !important;
 }
 </style>
 
 // ----------- good
 <style scoped>
 .class::v-deep .v-input__icon--append .v-icon {
-    color: $red !important;
+    color: var(--red) !important;
 }
 </style>
 ```
