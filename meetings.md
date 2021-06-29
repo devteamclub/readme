@@ -23,4 +23,4 @@ As a presenter or person who run meeting, your jobs starts days before the meeti
 What if I have another meeting right after and don't have time to send follow up email?
 - If you have back to back meetings that you are running. You're doing something wrong. Rethink your strategy of scheduling meetings. At least 15 min gaps should be between meetings. Still can't make it work? - You might simply have too much on your plate.
 What if I noticed that the meeting got off-topic?
-- After a few off-topic sentences, `pparticipant should not feel been shut down`, softly remind to take a close look into it in a separate meeting. Offer to run it will quickly determine if this meeting should happen or just a though for now.
+- After a few off-topic sentences, `participant should not feel been shut down`, softly remind to take a close look into it in a separate meeting. Offer to run it will quickly determine if this meeting should happen or just a though for now.
