@@ -10,13 +10,17 @@ As a presenter or person who run meeting, your jobs starts days before the meeti
 - Tools are ready. Place for notes, Share Screen, Mic and Camera,  two monitors, good internet (not mobile), a Quiet environment for duration of the meeting.
 
 ## Execution
-- If it is your meeting, you are the Boss. Some people by inertia getting into role Kindly and politically 
-- Lead the meeting. Pick one of the common strategy. Ask feedback after the meeting or on retrospective.
-- Do not deviate from topic. If that happens, notice it. After a few of topic sentences, so the person does not feel shut down, softly remind to take a close look into it in a separate meeting. Offer to run it will quickly determine if this meeting should happen or just a though for now.
-- Keep notes from the meetings. Not who said what. But items that has been covered. Actions that need to be taken by team.
+- If it is your meeting, you are the Boss. Sometimes participants unintentionally  overtake your meeting, note that and kindly remind them who is the Boss.
+- Lead the meeting. Pick one of the common strategy. Ask feedback after the meeting or during retrospective.
+- Do not deviate from topic. If that happens, notice it. `see FAQ`
+- Make sure someone writes notes of the meetings. Not who said what. But items that has been covered. Actions that need to be taken by the team.
+
 ## Follow-up
-- Within an hour after the meeting, follow up with email outlining the notes or link to the documentation hub where the notes are located.
+- Within an hour after the meeting, follow up with email outlining the notes or link to the `documentation hub` where the notes are located.
+- Make sure you outline action items and setup time for it, or follow up reminders.
 
 ## FAQ
-What if I have another meeting right after?
+What if I have another meeting right after and don't have time to send follow up email?
 - If you have back to back meetings that you are running. You're doing something wrong. Rethink your strategy of scheduling meetings. At least 15 min gaps should be between meetings. Still can't make it work? - You might simply have too much on your plate.
+What if I noticed that the meeting got off-topic?
+- After a few off-topic sentences, `pparticipant should not feel been shut down`, softly remind to take a close look into it in a separate meeting. Offer to run it will quickly determine if this meeting should happen or just a though for now.
