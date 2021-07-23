@@ -78,7 +78,7 @@ components/
     |- AboutText.vue
 ```
 
-### Components naming
+### Naming
 #### Multi-word component names
 Component names should always be multi-word, except for root App components, and built-in components provided by Vue, such as <transition> or <component>.
 ```js
@@ -123,6 +123,56 @@ components/
     |- HomeFeedbacks.vue
     |- AboutTeam.vue
     |- AboutText.vue
+```
+    
+#### Predicates naming
+Predicates names always start with is
+```js
+// ----------- bad
+const admin = true;
+setAdmin(true);
+getAdmin() => {
+    return true;
+}
+
+// ----------- good
+const isAdmin = true;
+setIsAdmin(true);
+getIsAdmin() => {
+    return true;
+}
+```
+    
+Entries predicates names always start with has
+```js
+// ----------- bad
+node.children();
+children(node);
+
+// ----------- good
+node.hasChildren();
+hasChildren(node);
+```
+    
+#### Lists naming      
+Lists always plural names
+```js
+// ----------- bad
+const children = node.childNodes;
+
+// ----------- good
+const childrens = node.childNodes;
+```
+
+Counts always plural names and ends with Count
+```js
+// ----------- bad
+const children = node.childNodes.length;
+const childrens = node.childNodes.length;
+const childrenCount = node.childNodes.length;
+
+// ----------- good
+const childrensCount = node.childNodes.length;
 ```
 
 
