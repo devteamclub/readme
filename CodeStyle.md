@@ -126,7 +126,7 @@ components/
 ```
     
 #### Predicates naming
-Predicates names always start with is
+Predicates names always start with `is`
 ```js
 // ----------- bad
 const admin = true;
@@ -143,7 +143,7 @@ getIsAdmin() => {
 }
 ```
     
-Entries predicates names always start with has
+Entries predicates names always start with `has`
 ```js
 // ----------- bad
 node.children();
@@ -164,7 +164,7 @@ const children = node.childNodes;
 const childrens = node.childNodes;
 ```
 
-Counts always plural names and ends with Count
+Counts always plural names and ends with `Count`
 ```js
 // ----------- bad
 const children = node.childNodes.length;
