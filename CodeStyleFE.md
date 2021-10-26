@@ -81,6 +81,49 @@ children(node);
 node.hasChildren();
 hasChildren(node);
 ```
+
+Use `fetch` when function get something from API
+```js
+// ----------- bad
+getTickets() {
+  tickets = await api.tickets.getTickets();
+}
+
+// ----------- good
+fetchTickets() {
+  tickets = await api.tickets.getTickets();
+}
+```
+
+Use `get` when function return something
+```js
+// ----------- bad
+getTickets() {
+  tickets = [...];
+}
+getTickets() {
+  tickets = await api.tickets.getTickets();
+}
+
+// ----------- good
+getTickets() {
+  tickets = [...];
+  return tickets;
+}
+```
+
+Use `set` when function set something from it's arguments
+```js
+// ----------- bad
+setTickets() {
+  newTickets = [...];
+}
+
+// ----------- good
+setTickets(tickets) {
+  newTickets = tickets;
+}
+```
 <br>
 
 #### Lists naming      
