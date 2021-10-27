@@ -82,7 +82,7 @@ node.hasChildren();
 hasChildren(node);
 ```
 
-Use `fetch` when function get something from API
+Use `fetch` for naming when function get something from API
 ```js
 // ----------- bad
 getTickets() {
@@ -95,7 +95,7 @@ fetchTickets() {
 }
 ```
 
-Use `get` when function return something
+Use `get` for naming when function returns a value
 ```js
 // ----------- bad
 getTickets() {
@@ -112,7 +112,7 @@ getTickets() {
 }
 ```
 
-Use `set` when function set something from it's arguments
+Use `set` for naming when function set something from it's arguments
 ```js
 // ----------- bad
 setTickets() {
