@@ -53,36 +53,32 @@ components/
 ```
 <br>
 
-#### Predicates naming
-Predicates names always start with `is`
+Predicate(returns boolean) functions/variables names always start with `is` or `has`
 ```js
 // ----------- bad
-const admin = true;
-setAdmin(true);
-getAdmin() => {
-    return true;
+const odd => (num) {
+    return num % 2;
 }
-
-// ----------- good
-const isAdmin = true;
-setIsAdmin(true);
-getIsAdmin() => {
-    return true;
-}
-```
     
-Entries predicates names always start with `has`
-```js
-// ----------- bad
-node.children();
-children(node);
+const pets = ['cat', 'dog', 'bat'];
+const cat => (str) {
+    return pets.includes(str)
+} 
+
 
 // ----------- good
-node.hasChildren();
-hasChildren(node);
+const isOdd => (num) {
+    return num % 2;
+}
+   
+const pets = ['cat', 'dog', 'bat'];
+const hasCat => (str) {
+    return pets.includes(str)
+} 
 ```
+<br>
 
-Use `fetch` for naming when function get something from API
+If function get data from API and does not return anything, name always start with `fetch`
 ```js
 // ----------- bad
 getTickets() {
@@ -94,8 +90,9 @@ fetchTickets() {
   tickets = await api.tickets.getTickets();
 }
 ```
+<br>
 
-Use `get` for naming when function returns a value
+If function return some data, name always start with `get`
 ```js
 // ----------- bad
 getTickets() {
@@ -111,8 +108,9 @@ getTickets() {
   return tickets;
 }
 ```
+<br>
 
-Use `set` for naming when function set something from it's arguments
+If function has arguments and does not return anything, name always start with `set`
 ```js
 // ----------- bad
 setTickets() {
@@ -379,4 +377,42 @@ props: {
         isShowChip(value) { ... }
     }
 </script>
+```
+<br>
+
+#### Don't create a method for one line code
+```js
+// ----------- bad
+<templage>
+    <div @click="showModal">Show modal</div>
+</templage>
+<script>
+    methods: {
+        showModal () {
+            this.isShowModal = true
+        }
+    }
+</script>
+
+// ----------- good
+<templage>
+    <div @click="isShowModal = true">Show modal</div>
+</templage>
+```   
+    
+<br>
+
+#### Always add comment with example of result format data if it is not clearly enough, especially for regEx
+```js
+// ----------- good
+getDate() {
+    // MM/DD/YYYY
+    return date.substring(0, 10)
+}
+    
+getFormatedDate(date) {
+    // MM/DD/YYYY
+    const pattern = /(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d/
+    return pattern.test(value)
+}
 ```   
